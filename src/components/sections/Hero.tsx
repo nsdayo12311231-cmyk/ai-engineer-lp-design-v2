@@ -22,7 +22,27 @@ export default function Hero() {
 
   useEffect(() => {
     setIsMounted(true);
-  }, []);
+
+    // ヒーロー画像を優先的にプリロード
+    const mobileImage = currentPattern === 1 ? '/hero-mobile-1.jpg' : currentPattern === 2 ? '/hero-mobile-2.jpg' : '/hero-mobile-3.jpg';
+    const desktopImage = currentPattern === 1 ? '/hero-desktop-1.jpg' : currentPattern === 2 ? '/hero-desktop-2.jpg' : '/hero-desktop-3.jpg';
+
+    // モバイル画像をプリロード
+    const mobileLink = document.createElement('link');
+    mobileLink.rel = 'preload';
+    mobileLink.as = 'image';
+    mobileLink.href = mobileImage;
+    mobileLink.media = '(max-width: 768px)';
+    document.head.appendChild(mobileLink);
+
+    // デスクトップ画像をプリロード
+    const desktopLink = document.createElement('link');
+    desktopLink.rel = 'preload';
+    desktopLink.as = 'image';
+    desktopLink.href = desktopImage;
+    desktopLink.media = '(min-width: 769px)';
+    document.head.appendChild(desktopLink);
+  }, [currentPattern]);
 
   // ローディングスケルトン表示（サーバーサイド & 初回レンダリング）
   if (!isMounted) {
@@ -74,7 +94,7 @@ export default function Hero() {
         {/* モバイル用画像 */}
         <img
           className="block md:hidden w-full cursor-pointer"
-          src={currentPattern === 1 ? '/hero-mobile-1.png' : currentPattern === 2 ? '/hero-mobile-2.png' : '/hero-mobile-3.png'}
+          src={currentPattern === 1 ? '/hero-mobile-1.jpg' : currentPattern === 2 ? '/hero-mobile-2.jpg' : '/hero-mobile-3.jpg'}
           alt="AI Engineer Hero"
           onClick={() => {
             if (typeof window !== 'undefined' && window.fbq) {
@@ -96,7 +116,7 @@ export default function Hero() {
         {/* デスクトップ用画像 */}
         <img
           className="hidden md:block w-full cursor-pointer"
-          src={currentPattern === 1 ? '/hero-desktop-1.png' : currentPattern === 2 ? '/hero-desktop-2.png' : '/hero-desktop-3.png'}
+          src={currentPattern === 1 ? '/hero-desktop-1.jpg' : currentPattern === 2 ? '/hero-desktop-2.jpg' : '/hero-desktop-3.jpg'}
           alt="AI Engineer Hero"
           onClick={() => {
             if (typeof window !== 'undefined' && window.fbq) {
