@@ -23,24 +23,26 @@ export default function Hero() {
   useEffect(() => {
     setIsMounted(true);
 
-    // ヒーロー画像を優先的にプリロード
+    // ヒーロー画像を優先的にプリロード（media条件で片方のみ）
     const mobileImage = currentPattern === 1 ? '/hero-mobile-1.jpg' : currentPattern === 2 ? '/hero-mobile-2.jpg' : '/hero-mobile-3.jpg';
     const desktopImage = currentPattern === 1 ? '/hero-desktop-1.jpg' : currentPattern === 2 ? '/hero-desktop-2.jpg' : '/hero-desktop-3.jpg';
 
-    // モバイル画像をプリロード
+    // モバイル画像をプリロード（767px以下のみ）
     const mobileLink = document.createElement('link');
     mobileLink.rel = 'preload';
     mobileLink.as = 'image';
     mobileLink.href = mobileImage;
-    mobileLink.media = '(max-width: 768px)';
+    mobileLink.media = '(max-width: 767px)';
+    mobileLink.setAttribute('fetchpriority', 'high');
     document.head.appendChild(mobileLink);
 
-    // デスクトップ画像をプリロード
+    // デスクトップ画像をプリロード（768px以上のみ）
     const desktopLink = document.createElement('link');
     desktopLink.rel = 'preload';
     desktopLink.as = 'image';
     desktopLink.href = desktopImage;
-    desktopLink.media = '(min-width: 769px)';
+    desktopLink.media = '(min-width: 768px)';
+    desktopLink.setAttribute('fetchpriority', 'high');
     document.head.appendChild(desktopLink);
   }, [currentPattern]);
 
@@ -96,6 +98,9 @@ export default function Hero() {
           className="block md:hidden w-full cursor-pointer"
           src={currentPattern === 1 ? '/hero-mobile-1.jpg' : currentPattern === 2 ? '/hero-mobile-2.jpg' : '/hero-mobile-3.jpg'}
           alt="AI Engineer Hero"
+          width="768"
+          height="1024"
+          fetchPriority="high"
           onClick={() => {
             if (typeof window !== 'undefined' && window.fbq) {
               window.fbq('track', 'Lead');
@@ -118,6 +123,9 @@ export default function Hero() {
           className="hidden md:block w-full cursor-pointer"
           src={currentPattern === 1 ? '/hero-desktop-1.jpg' : currentPattern === 2 ? '/hero-desktop-2.jpg' : '/hero-desktop-3.jpg'}
           alt="AI Engineer Hero"
+          width="1920"
+          height="1080"
+          fetchPriority="high"
           onClick={() => {
             if (typeof window !== 'undefined' && window.fbq) {
               window.fbq('track', 'Lead');
