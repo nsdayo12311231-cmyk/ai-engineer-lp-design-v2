@@ -1,126 +1,51 @@
 import Header from '../components/layout/Header';
+import Footer from '../components/layout/Footer';
 import FixedCTA from '../components/layout/FixedCTA';
 import Hero from '../components/sections/Hero';
-import Problems from '../components/sections/Problems';
-import Solution from '../components/sections/Solution';
-import AiSkillDefinition from '../components/sections/AiSkillDefinition';
-import WhyAiSkill from '../components/sections/WhyAiSkill';
-import OtherSeminars from '../components/sections/OtherSeminars';
-import SeminarBenefits from '../components/sections/SeminarBenefits';
-import SpecialOffers from '../components/sections/SpecialOffers';
+import ProblemSolution from '../components/sections/ProblemSolution';
+import Reviews from '../components/sections/Reviews';
+import Strengths from '../components/sections/Strengths';
+import Interview from '../components/sections/Interview';
+import FAQ from '../components/sections/FAQ';
+import Story from '../components/sections/Story';
+import CTAButton from '../components/ui/CTAButton';
 
 export default function Home() {
   return (
     <>
-      {/* <Header /> */}
+      {/* ヘッダー */}
+      <Header />
+
       <main className="pt-0">
+        {/* 1. ファーストビュー */}
         <Hero />
-        <Problems />
-        <Solution />
-        <AiSkillDefinition />
-        <WhyAiSkill />
-        <OtherSeminars />
-        <SeminarBenefits />
-        <SpecialOffers />
 
-        {/* CTA セクション */}
-        <section
-          style={{
-            backgroundImage: 'url(/hero-background.jpg)',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center',
-            position: 'relative'
-          }}
-          className="md:py-15 py-5"
-        >
-          {/* ダークオーバーレイ */}
-          <div
-            style={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              backgroundColor: 'rgba(0, 0, 0, 0.8)',
-              zIndex: 1
-            }}
-          ></div>
+        {/* CTA 1 */}
+        <CTAButton />
 
-          <div
-            style={{
-              width: '90%',
-              maxWidth: 'none',
-              margin: '0 auto',
-              position: 'relative',
-              zIndex: 2,
-              textAlign: 'center'
-            }}
-          >
-            {/* 赤文字メッセージ */}
-            <p
-              style={{
-                fontWeight: 'bold',
-                color: '#ff3131',
-                marginBottom: '20px',
-                lineHeight: '1.4',
-                whiteSpace: 'pre-line'
-              }}
-              className="md:text-[24px] text-[20px]"
-            >
-              <span className="hidden md:inline">席数が埋まり次第、受付終了となります。</span>
-              <span className="md:hidden">席数が埋まり次第、{'\n'}受付終了となります。</span>
-            </p>
+        {/* 2. 問題提起〜解決方法 */}
+        <ProblemSolution />
 
-            {/* 白文字メッセージ */}
-            <div
-              style={{
-                marginBottom: '40px'
-              }}
-            >
-              <p
-                style={{
-                  fontSize: '20px',
-                  fontWeight: 'bold',
-                  color: 'white',
-                  marginBottom: '10px',
-                  lineHeight: '1.4'
-                }}
-              >
-                下のボタンから残席数をチェック！
-              </p>
-              <p
-                style={{
-                  fontSize: '20px',
-                  fontWeight: 'bold',
-                  color: 'white',
-                  margin: 0,
-                  lineHeight: '1.4'
-                }}
-              >
-                未来を変える第一歩を！
-              </p>
-            </div>
+        {/* 3. 口コミ */}
+        <Reviews />
 
-            {/* CTAボタン */}
-            <button
-              style={{
-                background: 'linear-gradient(135deg, #ff6b35, #f39c12)',
-                color: 'white',
-                fontWeight: 'bold',
-                padding: '16px 32px',
-                borderRadius: '8px',
-                border: 'none',
-                fontSize: '18px',
-                cursor: 'pointer',
-                width: '100%',
-                maxWidth: '400px'
-              }}
-            >
-              無料セミナーに参加する
-            </button>
-          </div>
-        </section>
+        {/* CTA 2 */}
+        <CTAButton />
+
+        {/* 4. 強み */}
+        <Strengths />
+
+        {/* 5. インタビュー */}
+        <Interview />
+
+        {/* 6. Q&A */}
+        <FAQ />
+
+        {/* 7. ストーリーパート */}
+        <Story />
+
+        {/* CTA 3 */}
+        <CTAButton />
 
         {/* 会社情報 */}
         <section className="section-spacing bg-bg-secondary">
@@ -134,9 +59,14 @@ export default function Home() {
           </div>
         </section>
 
+        {/* フッター */}
+        <Footer />
+
         {/* 固定CTA用の余白 */}
         <div className="h-20"></div>
       </main>
+
+      {/* 固定CTA */}
       <FixedCTA />
     </>
   );
