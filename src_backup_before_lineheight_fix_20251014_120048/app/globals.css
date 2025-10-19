@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&display=swap');
+
+@layer base {
+  html {
+    font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  body {
+    @apply text-gray-900 bg-white;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply w-[90%] max-w-none mx-auto px-2;
+  }
+
+  .cta-button {
+    @apply bg-accent-main text-gray-900 font-semibold py-4 px-6 rounded-lg w-full text-cta transition-opacity duration-200 hover:opacity-90;
+  }
+
+  .section-spacing {
+    @apply py-md;
+  }
+
+  .card-style {
+    @apply bg-white border border-border-light rounded-lg p-5;
+  }
+}

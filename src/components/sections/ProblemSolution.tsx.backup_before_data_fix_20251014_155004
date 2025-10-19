@@ -174,18 +174,18 @@ function Step2({ highlightText }: { highlightText: (text: string) => React.React
 
         {/* 濃紺ボックス1 */}
         <div style={{ backgroundColor: '#3b4d6b', color: 'white', padding: '30px', borderRadius: '12px', marginBottom: '15px', textAlign: 'center' }}>
-          <p style={{ fontSize: '18px', marginBottom: '10px', fontWeight: 'normal' }}>副業者の収入が伸びない最大の理由</p>
+          <p style={{ fontSize: '18px', marginBottom: '10px', fontWeight: 'normal' }}>副業者の収入が伸びない理由の70%は</p>
           <h3 style={{ fontSize: 'clamp(32px, 6vw, 42px)', fontWeight: 'bold', margin: 0, fontFamily: "'Yu Mincho', 'Hiragino Mincho ProN', serif" }}>『低単価案件』</h3>
         </div>
 
         {/* 本文 */}
         <p style={{ fontSize: '18px', lineHeight: 1.5, marginBottom: '20px' }}>
-          多くの副業者が悩んでいるのは、<br />
-          実はスキル不足ではありません。
+          スキル不足に関する原因は<br />
+          たったの30%とも言われてます。
         </p>
 
         <p style={{ fontSize: '16px', lineHeight: 1.5, marginBottom: '20px' }}>
-          実際に、副業をしている人の<span style={{ color: '#ef4444', fontWeight: 'bold' }}>約3割</span>が、<span style={{ color: '#ef4444', fontWeight: 'bold' }}>月3万円未満の収入に留まっている</span>というデータがあります（MS-Japan 2024年調査）。なぜそんなに頑張っても稼げないのか、知ってますか？？
+          ちなみに、副業をしている人の<span style={{ color: '#ef4444', fontWeight: 'bold' }}>約40%</span>が、<span style={{ color: '#ef4444', fontWeight: 'bold' }}>月5万円未満しか稼げていない</span>というデータもあります。なぜそんなに頑張っても稼げないのか、知ってますか？？
         </p>
 
         <p style={{ fontSize: '16px', lineHeight: 1.5, marginBottom: '10px' }}>
@@ -203,7 +203,7 @@ function Step2({ highlightText }: { highlightText: (text: string) => React.React
         </p>
 
         <p style={{ fontSize: '16px', lineHeight: 1.5, marginBottom: '15px' }}>
-          多くの人が「スキル不足」や「営業力不足」が原因だと思いがちですが、実際は違います。高単価案件を獲得する方法を知らないことが最大の問題なのです。
+          一般的に想像されやすい、スキル不足や営業力不足などの要因は、実際にはたったの30%しかありません。
         </p>
 
         <p style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 'bold', textAlign: 'center', margin: '20px 0', lineHeight: 1.3 }}>
@@ -237,14 +237,14 @@ function Step2({ highlightText }: { highlightText: (text: string) => React.React
         </div>
 
         <div style={{ marginBottom: '20px' }}>
-          <p style={{ fontSize: '18px', lineHeight: 1.5, marginBottom: '10px', color: '#1f2937', fontWeight: 'bold' }}>
-            ✓ <span style={{ color: '#ef4444' }}>低単価案件</span>ばかり取ってしまう！
+          <p style={{ fontSize: '18px', lineHeight: 1.5, marginBottom: '10px', color: '#2563eb', fontWeight: 'bold' }}>
+            <span style={{ color: '#ef4444' }}>低単価案件ばかり取ってしまう</span>！
           </p>
-          <p style={{ fontSize: '18px', lineHeight: 1.5, marginBottom: '10px', color: '#1f2937', fontWeight: 'bold' }}>
-            ✓ <span style={{ color: '#ef4444' }}>時間ばかり奪われて</span>成長できない！
+          <p style={{ fontSize: '18px', lineHeight: 1.5, marginBottom: '10px', color: '#2563eb', fontWeight: 'bold' }}>
+            <span style={{ color: '#ef4444' }}>時間ばかり奪われて成長できない</span>！
           </p>
-          <p style={{ fontSize: '18px', lineHeight: 1.5, marginBottom: '20px', color: '#1f2937', fontWeight: 'bold' }}>
-            ✓ 副業経験が<span style={{ color: '#ef4444' }}>キャリアに繋がらない</span>！
+          <p style={{ fontSize: '18px', lineHeight: 1.5, marginBottom: '20px', color: '#2563eb', fontWeight: 'bold' }}>
+            <span style={{ color: '#ef4444' }}>副業経験がキャリアに繋がらない</span>！
           </p>
         </div>
 
@@ -309,7 +309,7 @@ function Step4({ highlightText }: { highlightText: (text: string) => React.React
         <p style={{ fontSize: 'clamp(18px, 4vw, 22px)', fontWeight: 'bold', marginBottom: '10px', lineHeight: 1.4 }}>
           だからこそ、知らなきゃいけない
         </p>
-        <h3 style={{ fontSize: 'clamp(24px, 10vw, 60px)', fontWeight: 'bold', margin: 0, fontFamily: "'Yu Mincho', 'Hiragino Mincho ProN', serif", lineHeight: 1.2 }}>
+        <h3 style={{ fontSize: 'clamp(40px, 8vw, 60px)', fontWeight: 'bold', margin: 0, fontFamily: "'Yu Mincho', 'Hiragino Mincho ProN', serif", lineHeight: 1.2 }}>
           AIエンジニアスキル
         </h3>
       </div>
@@ -324,7 +324,7 @@ function Step5({ highlightText }: { highlightText: (text: string) => React.React
         エンジニアって聞くと難しく感じますよね
       </h3>
       <p style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 'bold', marginBottom: '20px', lineHeight: 1.3 }}>
-        ただ、それは<span style={{ color: '#ef4444' }}>大きな間違い</span>です
+        それは<span style={{ color: '#ef4444' }}>大きな間違い</span>です
       </p>
       <p style={{ fontSize: 'clamp(18px, 4vw, 22px)', fontWeight: 'bold', lineHeight: 1.5 }}>
         AIを組み合わせることで<span style={{ color: '#ef4444', fontSize: 'clamp(20px, 4.5vw, 24px)' }}>初心者でもシステム開発</span>ができるようになります
@@ -336,16 +336,8 @@ function Step5({ highlightText }: { highlightText: (text: string) => React.React
 function Step6({ highlightText }: { highlightText: (text: string) => React.ReactNode }) {
   return (
     <div style={{ maxWidth: '800px', margin: '30px auto' }}>
-      {/* シンプル見出し */}
-      <h2 style={{
-        fontSize: 'clamp(20px, 8vw, 44px)',
-        fontWeight: 'bold',
-        color: '#ff6b35',
-        textAlign: 'center',
-        marginBottom: '20px',
-        fontFamily: "'Yu Mincho', 'Hiragino Mincho ProN', serif"
-      }}>
-        AIエンジニアとは？
+      <h2 style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 'bold', textAlign: 'center', marginBottom: '20px', color: '#1f2937' }}>
+        そもそもAIエンジニアスキルとは？
       </h2>
       <p style={{ fontSize: '18px', textAlign: 'center', marginBottom: '20px', lineHeight: 1.5 }}>
         エンジニアになる上で絶対に欠かせない<br />「コードを書くという作業」を

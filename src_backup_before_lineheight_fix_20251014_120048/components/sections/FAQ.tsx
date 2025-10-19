@@ -37,14 +37,13 @@ export default function FAQ() {
   ];
 
   return (
-    <section style={{ backgroundColor: '#f0f9ff', padding: '30px 16px' }}>
+    <section style={{ backgroundColor: '#f0f9ff', padding: '60px 16px' }}>
       <Container>
         <h2 style={{
           fontSize: 'clamp(24px, 5vw, 32px)',
           fontWeight: 'bold',
           textAlign: 'center',
-          marginBottom: '16px',
-          lineHeight: 1.2
+          marginBottom: '16px'
         }}>
           よくある質問
         </h2>
@@ -53,7 +52,7 @@ export default function FAQ() {
           fontSize: '18px',
           textAlign: 'center',
           color: '#6b7280',
-          marginBottom: '20px'
+          marginBottom: '40px'
         }}>
           あなたの不安を解消します
         </p>
@@ -106,7 +105,7 @@ function FAQItem({ faq }: { faq: FAQItem }) {
       {/* 回答 */}
       <div style={{
         fontSize: '16px',
-        lineHeight: 1.5,
+        lineHeight: 1.8,
         color: '#374151',
         paddingLeft: '20px',
         whiteSpace: 'pre-line'

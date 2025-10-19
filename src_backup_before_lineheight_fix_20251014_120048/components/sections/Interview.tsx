@@ -17,10 +17,10 @@ export default function Interview() {
   };
 
   return (
-    <section style={{ backgroundColor: 'white', padding: '30px 16px' }}>
+    <section style={{ backgroundColor: 'white', padding: '60px 16px' }}>
       <Container>
         {/* ヘッダー */}
-        <div style={{ marginBottom: '20px', textAlign: 'center' }}>
+        <div style={{ marginBottom: '40px', textAlign: 'center' }}>
           <p style={{
             fontSize: '14px',
             color: '#6b7280',
@@ -50,7 +50,7 @@ export default function Interview() {
           display: 'flex',
           alignItems: 'center',
           gap: '20px',
-          marginBottom: '20px',
+          marginBottom: '40px',
           flexWrap: 'wrap',
           justifyContent: 'center'
         }}>
@@ -124,7 +124,7 @@ function QuestionBlock({
   highlightText: (text: string) => React.ReactNode;
 }) {
   return (
-    <div style={{ marginBottom: '20px' }}>
+    <div style={{ marginBottom: '40px' }}>
       {/* 質問 */}
       <div style={{
         backgroundColor: '#3b82f6',
@@ -145,7 +145,7 @@ function QuestionBlock({
       {/* 回答 */}
       <div style={{
         fontSize: '16px',
-        lineHeight: 1.5,
+        lineHeight: 1.8,
         color: '#374151',
         paddingLeft: '20px',
         whiteSpace: 'pre-line'

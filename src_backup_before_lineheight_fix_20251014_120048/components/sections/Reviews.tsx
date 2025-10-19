@@ -45,7 +45,7 @@ export default function Reviews() {
   ];
 
   return (
-    <section style={{ backgroundColor: '#f9fafb', padding: '30px 16px' }}>
+    <section style={{ backgroundColor: '#f9fafb', padding: '60px 16px' }}>
       <Container>
         <h2 style={{
           fontSize: 'clamp(24px, 5vw, 32px)',
@@ -59,7 +59,7 @@ export default function Reviews() {
           fontSize: '18px',
           textAlign: 'center',
           color: '#6b7280',
-          marginBottom: '20px'
+          marginBottom: '40px'
         }}>
           AIエンジニア講座を受講して人生が変わった先輩にお話を聞きました！
         </p>
@@ -142,7 +142,7 @@ function ReviewCard({ review, isEven }: { review: Review; isEven: boolean }) {
           </div>
           <div style={{
             fontSize: '16px',
-            lineHeight: 1.5,
+            lineHeight: 1.8,
             color: '#374151',
             whiteSpace: 'pre-line'
           }}>

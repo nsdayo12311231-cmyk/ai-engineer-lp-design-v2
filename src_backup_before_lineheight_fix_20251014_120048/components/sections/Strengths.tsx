@@ -3,14 +3,13 @@ import Container from '../ui/Container';
 
 export default function Strengths() {
   return (
-    <section style={{ backgroundColor: 'white', padding: '30px 16px' }}>
+    <section style={{ backgroundColor: 'white', padding: '60px 16px' }}>
       <Container>
         <h2 style={{
           fontSize: 'clamp(32px, 6vw, 44px)',
           fontWeight: 'bold',
           textAlign: 'center',
-          marginBottom: '25px',
-          lineHeight: 1.2,
+          marginBottom: '50px',
           fontFamily: "'Yu Mincho', 'Hiragino Mincho ProN', serif"
         }}>
           なぜ私たちが教えられるのか
@@ -22,12 +21,12 @@ export default function Strengths() {
             backgroundColor: '#f9fafb',
             padding: '30px',
             borderRadius: '12px',
-            marginBottom: '20px',
+            marginBottom: '40px',
             textAlign: 'center'
           }}>
             <p style={{
               fontSize: '18px',
-              lineHeight: 1.5,
+              lineHeight: 1.8,
               color: '#1f2937',
               marginBottom: '20px'
             }}>
@@ -36,7 +35,7 @@ export default function Strengths() {
             </p>
             <p style={{
               fontSize: '16px',
-              lineHeight: 1.6,
+              lineHeight: 1.8,
               color: '#4b5563'
             }}>
               最初は小さなスタートでした。<br />
@@ -51,7 +50,7 @@ export default function Strengths() {
             backgroundColor: 'white',
             padding: '40px 30px',
             borderRadius: '12px',
-            marginBottom: '20px',
+            marginBottom: '40px',
             border: '1px solid #e5e7eb',
             boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)'
           }}>
@@ -64,13 +63,13 @@ export default function Strengths() {
                   fontWeight: 'bold',
                   color: '#ff6b35'
                 }}>
-                  売り上げ4億円達成
+                  年商3億円達成
                 </div>
               </div>
               <p style={{
                 fontSize: '15px',
                 color: '#6b7280',
-                lineHeight: 1.5
+                lineHeight: 1.6
               }}>
                 受講生の皆様にご支持いただき、安定した運営を続けています
               </p>
@@ -91,7 +90,7 @@ export default function Strengths() {
               <p style={{
                 fontSize: '15px',
                 color: '#6b7280',
-                lineHeight: 1.5
+                lineHeight: 1.6
               }}>
                 多くの方が「現実を変える」ことに成功しました
               </p>
@@ -112,7 +111,7 @@ export default function Strengths() {
               <p style={{
                 fontSize: '15px',
                 color: '#6b7280',
-                lineHeight: 1.5
+                lineHeight: 1.6
               }}>
                 確かなカリキュラムと丁寧なサポートによる成果です
               </p>
@@ -123,11 +122,11 @@ export default function Strengths() {
           <div style={{
             textAlign: 'center',
             padding: '30px 20px',
-            marginBottom: '20px'
+            marginBottom: '40px'
           }}>
             <p style={{
               fontSize: '18px',
-              lineHeight: 1.5,
+              lineHeight: 1.8,
               color: '#1f2937',
               fontWeight: '500',
               marginBottom: '25px'
@@ -137,7 +136,7 @@ export default function Strengths() {
             </p>
             <p style={{
               fontSize: '17px',
-              lineHeight: 1.6,
+              lineHeight: 1.8,
               color: '#4b5563'
             }}>
               この成功を見て、私たちは確信しました。<br />
@@ -152,14 +151,14 @@ export default function Strengths() {
             padding: '40px 30px',
             borderRadius: '12px',
             textAlign: 'center',
-            marginBottom: '20px',
+            marginBottom: '40px',
             boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)'
           }}>
             <p style={{
               fontSize: 'clamp(20px, 4vw, 24px)',
               fontWeight: 'bold',
               color: '#1f2937',
-              lineHeight: 1.4
+              lineHeight: 1.8
             }}>
               そこで第2弾として、<br />
               より<span style={{ color: '#ff6b35' }}>高単価に特化した</span><br />
@@ -170,8 +169,8 @@ export default function Strengths() {
           {/* ロードマップ公開 */}
           <div style={{
             background: 'linear-gradient(135deg, #ff8c42 0%, #ff6b35 50%, #d4a574 100%)',
-            padding: '30px 20px',
-            margin: '30px 0',
+            padding: '60px 20px',
+            margin: '60px 0',
             width: '100vw',
             position: 'relative',
             left: '50%',
@@ -185,7 +184,7 @@ export default function Strengths() {
               fontSize: 'clamp(18px, 3.5vw, 22px)',
               fontWeight: '500',
               color: 'white',
-              lineHeight: 1.6,
+              lineHeight: 1.8,
               marginBottom: '20px'
             }}>
               そして今回のセミナーでは、
@@ -194,17 +193,17 @@ export default function Strengths() {
               fontSize: 'clamp(22px, 4.5vw, 28px)',
               fontWeight: 'bold',
               color: 'white',
-              lineHeight: 1.4,
+              lineHeight: 1.6,
               marginBottom: '15px'
             }}>
-              売り上げ4億円、受講生1,000人超の<br />
+              年商3億円、受講生1,000人超の<br />
               実績を生んだ
             </div>
             <div style={{
               fontSize: 'clamp(20px, 4vw, 26px)',
               fontWeight: 'bold',
               color: 'white',
-              lineHeight: 1.3,
+              lineHeight: 1.6,
               marginBottom: '15px'
             }}>
               このスクールのロードマップを
@@ -213,7 +212,7 @@ export default function Strengths() {
               fontSize: 'clamp(32px, 6vw, 44px)',
               fontWeight: 'bold',
               color: 'white',
-              lineHeight: 1.2,
+              lineHeight: 1.4,
               fontFamily: "'Yu Mincho', 'Hiragino Mincho ProN', serif"
             }}>
               特別に大公開します

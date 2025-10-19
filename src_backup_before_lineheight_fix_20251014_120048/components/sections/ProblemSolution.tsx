@@ -15,7 +15,7 @@ export default function ProblemSolution() {
   };
 
   return (
-    <section style={{ backgroundColor: 'white', padding: '30px 16px' }}>
+    <section style={{ backgroundColor: 'white', padding: '60px 16px' }}>
       <Step1 />
       <Step2 highlightText={highlightText} />
       <Summary />
@@ -42,13 +42,13 @@ function Step1() {
       backgroundColor: '#1a1a1a',
       padding: '40px 10px',
       borderRadius: '16px',
-      margin: '20px 0',
+      margin: '40px 0',
       position: 'relative'
     }}>
       {/* ヘッダー部分 */}
       <div style={{
         position: 'relative',
-        marginBottom: '15px'
+        marginBottom: '30px'
       }}>
         <h2 style={{
           color: 'white',
@@ -99,7 +99,7 @@ function Step1() {
               alignItems: 'flex-start',
               marginBottom: index < problems.length - 1 ? '20px' : '0',
               fontSize: '18px',
-              lineHeight: 1.3,
+              lineHeight: 1.6,
               fontWeight: 'bold'
             }}>
               <img
@@ -140,21 +140,21 @@ function Step1() {
 
 function Step2({ highlightText }: { highlightText: (text: string) => React.ReactNode }) {
   return (
-    <div style={{ margin: '30px 0' }}>
+    <div style={{ margin: '60px 0' }}>
       <h2 style={{
         fontSize: 'clamp(36px, 6vw, 48px)',
         fontWeight: 'bold',
         textAlign: 'center',
-        marginBottom: '20px',
+        marginBottom: '40px',
         fontFamily: "'Yu Mincho', 'Hiragino Mincho ProN', serif",
-        lineHeight: 1.3
+        lineHeight: 1.6
       }}>
         その悩みは<br /><span style={{ color: '#ff3131' }}>あなただけではありません</span>
       </h2>
       <div style={{
         display: 'flex',
         justifyContent: 'center',
-        marginBottom: '20px'
+        marginBottom: '40px'
       }}>
         <div style={{
           fontSize: '28px',
@@ -173,86 +173,86 @@ function Step2({ highlightText }: { highlightText: (text: string) => React.React
       <div style={{ maxWidth: '800px', margin: '0 auto' }}>
 
         {/* 濃紺ボックス1 */}
-        <div style={{ backgroundColor: '#3b4d6b', color: 'white', padding: '30px', borderRadius: '12px', marginBottom: '15px', textAlign: 'center' }}>
-          <p style={{ fontSize: '18px', marginBottom: '10px', fontWeight: 'normal' }}>副業者の収入が伸びない最大の理由</p>
+        <div style={{ backgroundColor: '#3b4d6b', color: 'white', padding: '30px', borderRadius: '12px', marginBottom: '30px', textAlign: 'center' }}>
+          <p style={{ fontSize: '18px', marginBottom: '10px', fontWeight: 'normal' }}>副業者の収入が伸びない理由の70%は</p>
           <h3 style={{ fontSize: 'clamp(32px, 6vw, 42px)', fontWeight: 'bold', margin: 0, fontFamily: "'Yu Mincho', 'Hiragino Mincho ProN', serif" }}>『低単価案件』</h3>
         </div>
 
         {/* 本文 */}
-        <p style={{ fontSize: '18px', lineHeight: 1.5, marginBottom: '20px' }}>
-          多くの副業者が悩んでいるのは、<br />
-          実はスキル不足ではありません。
+        <p style={{ fontSize: '18px', lineHeight: 1.8, marginBottom: '20px' }}>
+          スキル不足に関する原因は<br />
+          たったの30%とも言われてます。
         </p>
 
-        <p style={{ fontSize: '16px', lineHeight: 1.5, marginBottom: '20px' }}>
-          実際に、副業をしている人の<span style={{ color: '#ef4444', fontWeight: 'bold' }}>約3割</span>が、<span style={{ color: '#ef4444', fontWeight: 'bold' }}>月3万円未満の収入に留まっている</span>というデータがあります（MS-Japan 2024年調査）。なぜそんなに頑張っても稼げないのか、知ってますか？？
+        <p style={{ fontSize: '16px', lineHeight: 1.8, marginBottom: '20px' }}>
+          ちなみに、副業をしている人の<span style={{ color: '#ef4444', fontWeight: 'bold' }}>約40%</span>が、<span style={{ color: '#ef4444', fontWeight: 'bold' }}>月5万円未満しか稼げていない</span>というデータもあります。なぜそんなに頑張っても稼げないのか、知ってますか？？
         </p>
 
-        <p style={{ fontSize: '16px', lineHeight: 1.5, marginBottom: '10px' }}>
+        <p style={{ fontSize: '16px', lineHeight: 1.8, marginBottom: '10px' }}>
           「案件が少ないから？」<br />
           「スキルが足りないから？」
         </p>
 
-        <p style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 'bold', textAlign: 'center', margin: '30px 0', lineHeight: 1.3 }}>
+        <p style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 'bold', textAlign: 'center', margin: '30px 0', lineHeight: 1.6 }}>
           いいえ。違います。
         </p>
 
-        <p style={{ fontSize: '18px', lineHeight: 1.5, marginBottom: '20px' }}>
+        <p style={{ fontSize: '18px', lineHeight: 1.8, marginBottom: '20px' }}>
           副業者の収入が伸びない原因の大半が、<br />
           <span style={{ color: '#ef4444', fontWeight: 'bold', fontSize: '20px' }}>低単価案件しか取れないこと</span>です。
         </p>
 
-        <p style={{ fontSize: '16px', lineHeight: 1.5, marginBottom: '15px' }}>
-          多くの人が「スキル不足」や「営業力不足」が原因だと思いがちですが、実際は違います。高単価案件を獲得する方法を知らないことが最大の問題なのです。
+        <p style={{ fontSize: '16px', lineHeight: 1.8, marginBottom: '30px' }}>
+          一般的に想像されやすい、スキル不足や営業力不足などの要因は、実際にはたったの30%しかありません。
         </p>
 
-        <p style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 'bold', textAlign: 'center', margin: '20px 0', lineHeight: 1.3 }}>
+        <p style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 'bold', textAlign: 'center', margin: '40px 0', lineHeight: 1.6 }}>
           つまり…
         </p>
 
-        <p style={{ fontSize: '18px', lineHeight: 1.5, marginBottom: '15px' }}>
+        <p style={{ fontSize: '18px', lineHeight: 1.8, marginBottom: '15px' }}>
           ほとんどの副業者は「スキルがない」から稼げないんじゃないんです。
         </p>
 
-        <p style={{ fontSize: '18px', lineHeight: 1.5, marginBottom: '15px' }}>
+        <p style={{ fontSize: '18px', lineHeight: 1.8, marginBottom: '15px' }}>
           どんなに素晴らしいスキルや実績を持っていても、<span style={{ color: '#ef4444', fontWeight: 'bold' }}>それが高単価案件に繋がらなければ意味がない</span>のです。
         </p>
 
-        <p style={{ fontSize: '18px', lineHeight: 1.5, marginBottom: '15px' }}>
+        <p style={{ fontSize: '18px', lineHeight: 1.8, marginBottom: '30px' }}>
           <span style={{ color: '#ef4444', fontWeight: 'bold' }}>低単価案件をいくら積み重ねても</span>、<span style={{ color: '#ef4444', fontWeight: 'bold' }}>時間だけが奪われて収入もキャリアも積み上がらない</span>のです。
         </p>
 
-        <p style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 'bold', textAlign: 'center', margin: '20px 0', lineHeight: 1.3 }}>
+        <p style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 'bold', textAlign: 'center', margin: '40px 0', lineHeight: 1.6 }}>
           しかし…
         </p>
 
-        <p style={{ fontSize: '18px', lineHeight: 1.5, marginBottom: '15px' }}>
+        <p style={{ fontSize: '18px', lineHeight: 1.8, marginBottom: '30px' }}>
           多くの副業者や個人事業主は、<span style={{ color: '#ef4444', fontWeight: 'bold' }}>高単価案件をどうやって獲得するか、集客するかを知らない</span>のです…
         </p>
 
         {/* 濃紺ボックス2 */}
-        <div style={{ backgroundColor: '#3b4d6b', color: 'white', padding: '30px', borderRadius: '12px', marginBottom: '15px', textAlign: 'center' }}>
+        <div style={{ backgroundColor: '#3b4d6b', color: 'white', padding: '30px', borderRadius: '12px', marginBottom: '30px', textAlign: 'center' }}>
           <p style={{ fontSize: '18px', marginBottom: '10px', fontWeight: 'normal' }}>稼げない副業者が、必ずやってる</p>
           <h3 style={{ fontSize: 'clamp(32px, 6vw, 42px)', fontWeight: 'bold', margin: 0, fontFamily: "'Yu Mincho', 'Hiragino Mincho ProN', serif" }}>間違いTOP3</h3>
         </div>
 
         <div style={{ marginBottom: '20px' }}>
-          <p style={{ fontSize: '18px', lineHeight: 1.5, marginBottom: '10px', color: '#1f2937', fontWeight: 'bold' }}>
-            ✓ <span style={{ color: '#ef4444' }}>低単価案件</span>ばかり取ってしまう！
+          <p style={{ fontSize: '18px', lineHeight: 1.8, marginBottom: '10px', color: '#2563eb', fontWeight: 'bold' }}>
+            <span style={{ color: '#ef4444' }}>低単価案件ばかり取ってしまう</span>！
           </p>
-          <p style={{ fontSize: '18px', lineHeight: 1.5, marginBottom: '10px', color: '#1f2937', fontWeight: 'bold' }}>
-            ✓ <span style={{ color: '#ef4444' }}>時間ばかり奪われて</span>成長できない！
+          <p style={{ fontSize: '18px', lineHeight: 1.8, marginBottom: '10px', color: '#2563eb', fontWeight: 'bold' }}>
+            <span style={{ color: '#ef4444' }}>時間ばかり奪われて成長できない</span>！
           </p>
-          <p style={{ fontSize: '18px', lineHeight: 1.5, marginBottom: '20px', color: '#1f2937', fontWeight: 'bold' }}>
-            ✓ 副業経験が<span style={{ color: '#ef4444' }}>キャリアに繋がらない</span>！
+          <p style={{ fontSize: '18px', lineHeight: 1.8, marginBottom: '20px', color: '#2563eb', fontWeight: 'bold' }}>
+            <span style={{ color: '#ef4444' }}>副業経験がキャリアに繋がらない</span>！
           </p>
         </div>
 
-        <p style={{ fontSize: '16px', lineHeight: 1.5, marginBottom: '20px' }}>
+        <p style={{ fontSize: '16px', lineHeight: 1.8, marginBottom: '20px' }}>
           これは本当に多くの副業者がしてしまっている、<span style={{ color: '#ef4444', fontWeight: 'bold' }}>大きな間違い</span>です…
         </p>
 
-        <p style={{ fontSize: '18px', lineHeight: 1.5, marginBottom: '15px' }}>
+        <p style={{ fontSize: '18px', lineHeight: 1.8, marginBottom: '30px' }}>
           副業者や個人事業主の最大の課題は、<span style={{ color: '#ef4444', fontWeight: 'bold' }}>低単価から抜け出せないこと</span>なのです。
         </p>
       </div>
@@ -263,11 +263,11 @@ function Step2({ highlightText }: { highlightText: (text: string) => React.React
 
 function Summary() {
   return (
-    <div style={{ maxWidth: '800px', margin: '30px auto', textAlign: 'center' }}>
-      <p style={{ fontSize: '18px', lineHeight: 1.5, marginBottom: '20px', color: '#4b5563' }}>
+    <div style={{ maxWidth: '800px', margin: '60px auto', textAlign: 'center' }}>
+      <p style={{ fontSize: '18px', lineHeight: 1.8, marginBottom: '20px', color: '#4b5563' }}>
         このようにたくさんの人が副業に同じ悩みを抱えています...
       </p>
-      <p style={{ fontSize: 'clamp(28px, 5vw, 36px)', fontWeight: 'bold', lineHeight: 1.3, color: '#1a1a1a' }}>
+      <p style={{ fontSize: 'clamp(28px, 5vw, 36px)', fontWeight: 'bold', lineHeight: 1.6, color: '#1a1a1a' }}>
         でも、安心してください。<br />
         解決策があります。
       </p>
@@ -277,11 +277,11 @@ function Summary() {
 
 function Step3({ highlightText }: { highlightText: (text: string) => React.ReactNode }) {
   return (
-    <div style={{ maxWidth: '800px', margin: '20px auto', textAlign: 'center' }}>
-      <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '15px', color: '#1f2937' }}>
+    <div style={{ maxWidth: '800px', margin: '40px auto', textAlign: 'center' }}>
+      <h3 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '30px', color: '#1f2937' }}>
         ここで一つ質問させてください
       </h3>
-      <p style={{ fontSize: 'clamp(20px, 4vw, 26px)', lineHeight: 1.5, fontWeight: 'bold' }}>
+      <p style={{ fontSize: 'clamp(20px, 4vw, 26px)', lineHeight: 1.8, fontWeight: 'bold' }}>
         もし、<span style={{ color: '#ef4444', fontSize: 'clamp(22px, 4.5vw, 28px)' }}>高単価スキル</span>の習得ができれば<br />
         この問題<span style={{ color: '#ef4444', fontSize: 'clamp(22px, 4.5vw, 28px)' }}>全て解決できる</span>と思いませんか？
       </p>
@@ -294,8 +294,8 @@ function Step4({ highlightText }: { highlightText: (text: string) => React.React
     <div style={{
       background: 'linear-gradient(135deg, #ff9500, #ff5500)',
       color: 'white',
-      padding: '25px 20px',
-      margin: '30px 0',
+      padding: '50px 20px',
+      margin: '60px 0',
       textAlign: 'center',
       width: '100vw',
       position: 'relative',
@@ -309,7 +309,7 @@ function Step4({ highlightText }: { highlightText: (text: string) => React.React
         <p style={{ fontSize: 'clamp(18px, 4vw, 22px)', fontWeight: 'bold', marginBottom: '10px', lineHeight: 1.4 }}>
           だからこそ、知らなきゃいけない
         </p>
-        <h3 style={{ fontSize: 'clamp(24px, 10vw, 60px)', fontWeight: 'bold', margin: 0, fontFamily: "'Yu Mincho', 'Hiragino Mincho ProN', serif", lineHeight: 1.2 }}>
+        <h3 style={{ fontSize: 'clamp(40px, 8vw, 60px)', fontWeight: 'bold', margin: 0, fontFamily: "'Yu Mincho', 'Hiragino Mincho ProN', serif", lineHeight: 1.2 }}>
           AIエンジニアスキル
         </h3>
       </div>
@@ -319,14 +319,14 @@ function Step4({ highlightText }: { highlightText: (text: string) => React.React
 
 function Step5({ highlightText }: { highlightText: (text: string) => React.ReactNode }) {
   return (
-    <div style={{ maxWidth: '800px', margin: '30px auto', textAlign: 'center' }}>
-      <h3 style={{ fontSize: 'clamp(22px, 4vw, 28px)', fontWeight: 'bold', marginBottom: '15px', color: '#1f2937' }}>
+    <div style={{ maxWidth: '800px', margin: '60px auto', textAlign: 'center' }}>
+      <h3 style={{ fontSize: 'clamp(22px, 4vw, 28px)', fontWeight: 'bold', marginBottom: '30px', color: '#1f2937' }}>
         エンジニアって聞くと難しく感じますよね
       </h3>
-      <p style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 'bold', marginBottom: '20px', lineHeight: 1.3 }}>
-        ただ、それは<span style={{ color: '#ef4444' }}>大きな間違い</span>です
+      <p style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 'bold', marginBottom: '40px', lineHeight: 1.6 }}>
+        それは<span style={{ color: '#ef4444' }}>大きな間違い</span>です
       </p>
-      <p style={{ fontSize: 'clamp(18px, 4vw, 22px)', fontWeight: 'bold', lineHeight: 1.5 }}>
+      <p style={{ fontSize: 'clamp(18px, 4vw, 22px)', fontWeight: 'bold', lineHeight: 1.8 }}>
         AIを組み合わせることで<span style={{ color: '#ef4444', fontSize: 'clamp(20px, 4.5vw, 24px)' }}>初心者でもシステム開発</span>ができるようになります
       </p>
     </div>
@@ -335,39 +335,31 @@ function Step5({ highlightText }: { highlightText: (text: string) => React.React
 
 function Step6({ highlightText }: { highlightText: (text: string) => React.ReactNode }) {
   return (
-    <div style={{ maxWidth: '800px', margin: '30px auto' }}>
-      {/* シンプル見出し */}
-      <h2 style={{
-        fontSize: 'clamp(20px, 8vw, 44px)',
-        fontWeight: 'bold',
-        color: '#ff6b35',
-        textAlign: 'center',
-        marginBottom: '20px',
-        fontFamily: "'Yu Mincho', 'Hiragino Mincho ProN', serif"
-      }}>
-        AIエンジニアとは？
+    <div style={{ maxWidth: '800px', margin: '60px auto' }}>
+      <h2 style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 'bold', textAlign: 'center', marginBottom: '40px', color: '#1f2937' }}>
+        そもそもAIエンジニアスキルとは？
       </h2>
-      <p style={{ fontSize: '18px', textAlign: 'center', marginBottom: '20px', lineHeight: 1.5 }}>
+      <p style={{ fontSize: '18px', textAlign: 'center', marginBottom: '20px', lineHeight: 1.8 }}>
         エンジニアになる上で絶対に欠かせない<br />「コードを書くという作業」を
       </p>
       <p style={{ fontSize: 'clamp(26px, 5vw, 32px)', fontWeight: 'bold', color: '#ef4444', textAlign: 'center', margin: '30px 0' }}>
         AIで完結します
       </p>
-      <p style={{ fontSize: '18px', textAlign: 'center', marginBottom: '20px' }}>それによって...</p>
+      <p style={{ fontSize: '18px', textAlign: 'center', marginBottom: '40px' }}>それによって...</p>
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', marginBottom: '20px' }}>
-        <p style={{ fontSize: '18px', fontWeight: 'bold', lineHeight: 1.5 }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', marginBottom: '40px' }}>
+        <p style={{ fontSize: '18px', fontWeight: 'bold', lineHeight: 1.8 }}>
           ✅ コードや難しいプログラミング言語を<span style={{ color: '#ef4444' }}>覚える必要がない</span>
         </p>
-        <p style={{ fontSize: '18px', fontWeight: 'bold', lineHeight: 1.5 }}>
+        <p style={{ fontSize: '18px', fontWeight: 'bold', lineHeight: 1.8 }}>
           ✅ コードを書く時間や勉強する時間を<span style={{ color: '#ef4444' }}>短縮できる</span>
         </p>
-        <p style={{ fontSize: '18px', fontWeight: 'bold', lineHeight: 1.5 }}>
+        <p style={{ fontSize: '18px', fontWeight: 'bold', lineHeight: 1.8 }}>
           ✅ <span style={{ color: '#ef4444' }}>初心者でもチャレンジ可能</span>に！
         </p>
       </div>
 
-      <p style={{ fontSize: '18px', textAlign: 'center', lineHeight: 1.5 }}>
+      <p style={{ fontSize: '18px', textAlign: 'center', lineHeight: 1.8 }}>
         それにより、初心者であっても、既存のエンジニアよりも早く、<br />システム開発ができるようになります！
       </p>
     </div>
@@ -378,8 +370,8 @@ function Step7({ highlightText }: { highlightText: (text: string) => React.React
   return (
     <div style={{
       background: 'linear-gradient(135deg, #e0f2fe 0%, #f3e8ff 100%)',
-      padding: '30px 20px',
-      margin: '30px 0',
+      padding: '60px 20px',
+      margin: '60px 0',
       width: '100vw',
       position: 'relative',
       left: '50%',
@@ -388,15 +380,15 @@ function Step7({ highlightText }: { highlightText: (text: string) => React.React
       marginRight: '-50vw'
     }}>
       <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-        <p style={{ fontSize: '18px', lineHeight: 1.5, marginBottom: '15px' }}>
+        <p style={{ fontSize: '18px', lineHeight: 1.8, marginBottom: '15px' }}>
           通常のエンジニアが1ヶ月かけるシステム開発を、
         </p>
-        <p style={{ fontSize: '18px', lineHeight: 1.5, marginBottom: '15px' }}>
+        <p style={{ fontSize: '18px', lineHeight: 1.8, marginBottom: '30px' }}>
           AIエンジニアなら<span style={{ color: '#ef4444', fontWeight: 'bold', fontSize: '20px' }}>5倍以上早く</span>完成させることができます。
         </p>
 
         {/* 中央画像（パターンD: AIエンジニアのイメージ） */}
-        <div style={{ margin: '20px 0', display: 'flex', justifyContent: 'center' }}>
+        <div style={{ margin: '40px 0', display: 'flex', justifyContent: 'center' }}>
           <img
             src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600"
             alt="AI Engineer"
@@ -410,11 +402,11 @@ function Step7({ highlightText }: { highlightText: (text: string) => React.React
           />
         </div>
 
-        <p style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '20px', color: '#ef4444' }}>
+        <p style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '40px', color: '#ef4444' }}>
           これがAIエンジニアの圧倒的な優位性です。
         </p>
 
-        <h3 style={{ fontSize: 'clamp(20px, 4vw, 26px)', fontWeight: 'bold', marginBottom: '15px', color: '#1f2937', lineHeight: 1.3 }}>
+        <h3 style={{ fontSize: 'clamp(20px, 4vw, 26px)', fontWeight: 'bold', marginBottom: '30px', color: '#1f2937', lineHeight: 1.6 }}>
           あなたが社長ならどちらのエンジニアと仕事がしたいですか
         </h3>
 
@@ -428,20 +420,20 @@ function Step7({ highlightText }: { highlightText: (text: string) => React.React
 
 function Step8({ highlightText }: { highlightText: (text: string) => React.ReactNode }) {
   return (
-    <div style={{ maxWidth: '800px', margin: '30px auto', textAlign: 'center' }}>
-      <p style={{ fontSize: '18px', lineHeight: 1.5, marginBottom: '15px', color: '#4b5563' }}>
+    <div style={{ maxWidth: '800px', margin: '60px auto', textAlign: 'center' }}>
+      <p style={{ fontSize: '18px', lineHeight: 1.8, marginBottom: '30px', color: '#4b5563' }}>
         もうすでにAIを活用し、AIエンジニアとして活躍する人材が増えてきていますが
       </p>
       <p style={{
         fontSize: 'clamp(36px, 7vw, 52px)',
         fontWeight: 'bold',
-        marginBottom: '15px',
+        marginBottom: '30px',
         color: '#ff4500',
         fontFamily: "'Yu Mincho', 'Hiragino Mincho ProN', serif"
       }}>
         まだ間に合います
       </p>
-      <p style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 'bold', lineHeight: 1.5, marginBottom: '20px', color: '#1f2937' }}>
+      <p style={{ fontSize: 'clamp(24px, 5vw, 32px)', fontWeight: 'bold', lineHeight: 1.8, marginBottom: '20px', color: '#1f2937' }}>
         手遅れになる前に、AIエンジニアが増える前に
       </p>
       <p style={{
@@ -459,7 +451,7 @@ function Step8({ highlightText }: { highlightText: (text: string) => React.React
 
 function Step9() {
   return (
-    <div style={{ maxWidth: '800px', margin: '20px auto', textAlign: 'center' }}>
+    <div style={{ maxWidth: '800px', margin: '80px auto', textAlign: 'center' }}>
       {/* LINE登録ボタン */}
       <a
         href="https://lin.ee/your-line-id"
@@ -486,7 +478,7 @@ function Step9() {
         fontSize: '16px',
         color: '#6b7280',
         marginTop: '20px',
-        lineHeight: 1.3
+        lineHeight: 1.6
       }}>
         LINE登録後、Zoomリンクが自動で届きます<br />
         セミナー開始時間になったら、届いたリンクから参加できます
